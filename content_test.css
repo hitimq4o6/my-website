@@ -1,0 +1,511 @@
+/*Wong Siu Lun 230503773 ITP114116 1b */
+/*LAST MODIFY: 23/4/2024*/
+
+/*This is the css for the typeOfCat_test.html   video.html   usefullink_test.html  quiz.html  quiz_comment.html */
+
+
+/*Styles for the All Default Value */
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Comic Sans MS;
+	background-color: #C37F2F;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*Styles for the Navigation Bar */
+.navbar{
+    display: flex ;
+    background-color: #cd671d ;
+    justify-content: space-around ;
+	height: 180px;
+}
+
+
+.navbar ul{
+    display: flex ;
+    align-items: center ;
+}
+
+.navbar li{
+    list-style: none;
+    margin-left: 1.5rem;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: white;
+}
+
+.navbar a:hover{
+    color: #B1E3FD;
+	
+}
+
+.navbar img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.navbar .sub a{
+  font-size: 12px;
+}
+.navbar .sub {
+   font-size: 10px;
+  top: 5px;
+  position: relative;
+}
+
+/*li is for the List of typeOfCathtml hyperlink, connect to the hoime cats or the wild cats anchor*/
+.navbar  li:hover .sub {
+  display: block;
+}
+
+.navbar .sub li{
+  overflow: hidden;
+  height: 0;
+  transition: height 500ms;
+
+ }
+ 
+.navbar li:hover .sub li {
+  height: 30px;
+}
+.flex-container { 
+display: flex; flex-flow: row wrap; 
+}
+
+/*Styles for the "top" Button */
+#scroll{
+    display: none; 
+    position: fixed; 
+    bottom: 50px; 
+    right: 50px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #6E696F; 
+    color: white; 
+    padding: 15px; 
+    border-radius: 50%; 
+    font-size: 15px; 
+	font-family: Copperplate;
+}
+
+#scroll:hover {
+	background-color: #055899;
+	font-size: 16px;  
+}
+
+
+/*Styles for the Header of video.html */
+.header1{
+    text-align: center;
+    position: relative ;
+    color: white ;
+	margin-bottom: -10px;
+}
+
+
+/*Styles for the video container of video.html */
+.video{
+    content: "\A\A";
+    white-space: pre;
+    margin-left: 200px ;
+    margin-bottom: 50px;
+	position: relative;
+	
+}	
+
+.video h3{
+	color: #013770;
+	font-size: 2em;
+}
+.video p{
+	color: #2684A7;
+	font-size: 1.05em;
+}
+.video_centered{
+    position: absolute ;
+    font-size: 35px;
+    margin-top: 40px;
+    left: 20%;
+	color: white;
+	
+}
+
+.video_hidden{
+	display: none;
+}
+
+.video iframe{
+  
+	top: 0;
+  margin-right: auto;
+
+}
+
+/*Styles for the centered title of typeOfCat_test.html */
+.centered{
+    position: absolute ;
+    font-size: 35px;
+    top: 50% ;
+    left: 25% ;
+    transform: translate(-50%, -50%) ;
+}
+
+
+/*Styles for the core elements of typeOfCat_test.html */
+.centered{
+    position: absolute ;
+    font-size: 35px;
+    top: 50% ;
+    left: 25% ;
+    transform: translate(-50%, -50%) ;
+}
+
+.main{
+	margin-top: 10px; 
+	margin-left: 200px ;
+	margin-right: 200px ;
+	background-color:#FEC88F;
+}
+
+/*Styles for the "homies" part of typeOfCat_test.html */	
+.homie{
+	width: 100%;
+	height: 100%;
+    position: relative ;
+    text-align: center ;
+    color: white ;
+	margin-bottom: -10px;
+	overflow: hidden;
+	  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wild_centered{
+    position: absolute ;
+    font-size: 35px;
+    top: 50% ;
+    right: 15% ;
+    transform: translate(-50%, -50%) ;
+}
+.homie img{
+  
+    width: 100%;
+	height: 100%;
+	overflow: cover;
+}
+.homie h2{
+    font-size: 3.5em;
+}
+
+
+/*Styles for the "wild" part of typeOfCat_test.html */	
+.wild{
+	width: 100%;
+	height: 100%;
+    position: relative ;
+    text-align: center ;
+    color: white ;
+	margin-bottom: -10px;
+	overflow: hidden;
+	  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wild img{
+  
+    width: 100%;
+	height: 100%;
+	overflow: cover;
+}
+.wild h2{
+    font-size: 3.5em;
+}
+
+
+
+/*Styles for the container with Cat Picture on Right of typeOfCat_test.html */	
+.text_right {
+    width: 95%;
+    margin: 20px;
+	overflow: hidden;
+}
+.text_right a{
+    font-size: 2em;
+	color: #4D838A;
+}
+.text_right a:hover{
+  color: #0476FF;
+  font-size: 2.06em; 
+}
+.text_right p{
+    font-size: 20px;
+	color: #144971;
+}
+.text_right img {
+	float: right;
+    margin-left: 10px;
+    max-width: 60%;
+    height: auto;
+}
+
+
+
+/*Styles for the container with Cat Picture on Left of typeOfCat_test.html */	
+.text_left {
+    width: 95%;
+    margin: 20px;
+	overflow: hidden;
+	background-color:white;
+}
+.text_left a{
+    font-size: 2em;
+	color: #4D838A;
+}
+.text_left a:hover{
+  color: #0476FF;
+  font-size: 2.06em; 
+}
+.text_left p{
+    font-size: 20px;
+	color: #144971;
+}
+.text_left img {
+	float: left;
+    margin-right: 20px;
+    max-width: 60%;
+   
+}
+
+
+
+/*Styles for the usefullink_test.html */	
+.page{
+    position: relative;
+    margin-left: 200px ;
+    margin-bottom: 50px;
+	margin-top: -10px ;
+	content: "\A\A";
+	font-size:20px;
+	
+	
+}
+
+.page img{
+    position: absolute;
+	right: 20px;
+	
+  max-width: 25%;
+  max-height: 25%;
+}
+.page  h2 {
+  color: #013770;
+  font-size: 2em; 
+}
+.page a{
+  color: #1A76D8; 
+}
+.page a:hover{
+  color: #1ACFD8;
+  font-size: 1.05em; 
+}
+
+.page p{
+  color: #0D005C;
+  font-size: 1.2em; 
+
+}
+
+
+
+
+/*Styles for the quiz.html and quiz_comment.html*/	
+.quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.quiz_heading {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+.quiz_heading h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #000080;
+}
+.quiz_heading h2 {
+  font-size: 25px;
+  
+  color: #0C5A98;
+}
+.quiz_heading a {
+  font-size: 30px;
+
+  color: #229DFF;
+}
+.quiz_heading a:hover {
+  font-size: 34px;
+  font-weight: bold;
+  color: #22D3FF;
+}
+.quiz_heading b {
+  font-size: 30px;
+
+  color: #FF2276;
+}		
+	
+/*Styles for the form of form_test.html */
+.form{
+    text-align: center;
+    line-height: 50px;;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+	
+}
+
+
+/*Styles for the sumbit / clear button of form_test.html */
+.button input{
+    background-color: white; 
+    border-radius: 10px;
+    color: black;
+    padding: 10px 30px;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+}
+
+.button input:hover {
+    background-color: #8FCBFE;
+    color: white;
+  }
+  
+
+
+
+
+/*Styles for the footer */
+.footer{
+    padding: 10px 10px 0px 10px ;
+    width: 100% ;
+    height: 150px ;
+  background-color: #cd671d;
+}
+
+.footer img{
+    display: block ;
+    margin-left: auto;
+    margin-right: auto;
+	height: 100%;
+}
+
+
+
+
+/*background color changes when screen size changes*/
+/*Images for the usefullink_test.html hide when screen under 1800px*/
+@media only screen and (max-width: 1800px){
+.page img{
+	display: none;
+}
+html{ height: auto; background-color: #D18329; 
+}
+}
+
+
+
+/*Shrink and image hide in respective pages when screen under 1300px*/
+@media only screen and (max-width: 1300px){
+.form{
+    text-align: center;
+    line-height: 40px;
+    margin-top: 15px;
+    margin-left: 75px;
+    margin-right: 75px;
+    
+}
+.video{
+	content: none;
+	margin-left: 0px ;
+	 margin-bottom: 0px;
+	 content: " ";
+	white-space: normal;
+	color: #FF7800;
+}
+.navbar img{
+    display: none;
+}
+.video iframe{
+	-webkit-transform: scale(0.6);
+}
+.quiz img{
+	display:none;
+}
+html{ height: auto; background-color: #8A6A43; 
+}
+
+.video_centered{
+    display:none;
+	
+}
+.page{
+    text-align: center;
+	font-size: 10px;
+	margin-left: 10px;
+}
+
+}
+
+
+/*More content shrink and image hide in respective pages when screen under 900px*/
+/*Text Replace the video iframe when screen under 900px*/
+@media only screen and (max-width: 900px){
+.form{
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+.video {
+ display:none;
+	
+}
+.video_hidden{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	color: red;
+	font-size:40px;
+}
+
+.video_hidden img {
+  max-width: 100%;
+  height: auto;
+}
+.page p{
+  display: none;
+
+}
+
+html{ height: auto; background-color: #AF7B3D; 
+}
+}
+

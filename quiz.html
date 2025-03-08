@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Wong Siu Lun 230503773 ITP114116 1b-->
+<!-- LAST MODIFY: 23/4/2024 -->
+
+<!-- This is the Quiz Page of the TY IVE Cat-Lover Club -->
+
+<html lang="en-US">
+<head>
+<!-- Head section -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="content_test.css" type="text/css">
+	<title>Cat Quiz</title>
+
+</head>
+
+<body>
+<!-- Body section -->
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="index.html"><img src="photo/cat_claw_logo.png" class="navlogo" width="200" height="200"></a>
+<ul>
+<!-- Index of Navigation Bar -->
+    <li><a href="index.html">Home</a></li>
+    <li>
+		<a href="typeOfCat_test.html">Type of Cats</a>
+		<ul class="sub">
+			<li><a href="typeOfCat_test.html#Homie">Homie</a></li>
+			<li><a href="typeOfCat_test.html#Wild">Wild</a></li>
+		</ul>
+	</li>
+    <li><a href="video.html">Fun Video</a></li>
+	<li><a href="quiz.html">Quiz</a></li>
+    <li><a href="usefullink_test.html">More Cats</a></li>
+    <li><a href="form_test.html">Join Us</a></li>
+	
+</ul>
+</div>
+
+<!-- Function for the "top" button -->
+<button onclick="topFunction()" id="scroll" title="Go to top">Top</button>
+<script>
+let mybutton = document.getElementById("scroll");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction(){
+   if (document.body.scrollTop >30 ||document.documentElement.scrollTop >30) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+function topFunction(){
+    document.documentElement.scrollTop = 0; 
+}
+</script>
+
+<!-- Main Body -->
+<div class="main">
+
+
+<!-- Heading of the Quiz Page -->
+<div class="quiz_heading" >
+<br>
+<br>
+<h1>TIME FOR QUIZ!</h1><br>
+	<h2><p>Little quiz to test your knowledge about cats</p></h2>
+	<!-- Link for connecting the comment of the quiz -->
+	<h2><p>View score comment after completing the quiz <a href="quiz_comment.html" >Here</a></p></h2>
+	<br>
+<br>
+</div>
+
+<!-- Quiz Page Lined to the Google Form Quiz -->
+<div class="quiz" >
+	<img src="Photo/Sphynx1.jpg" width="30%"> 
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdaKGRO80M209IAYlYd0XAY9alnlBDsNF0vNC89hnEavdV0IQ/viewform?embedded=true" width="540" height="960" frameborder="0" marginheight="0" marginwidth="0">loading…</iframe>
+	<img src="Photo/Sphynx2.jpg" width="30%"> 
+</div>
+
+
+<!-- Footer -->
+<div class="footer">
+    <img src="photo/cat_claw_logo.png" class="navlogo" width="140" height="140"></a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,462 @@
+/*Wong Siu Lun 230503773 ITP114116 1b */
+/*LAST MODIFY: 23/4/2024*/
+
+/*This is the css for the index.html*/
+
+
+/*Styles for the All Default Value */
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Comic Sans MS;
+	background-color: #C37F2F;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/*Order of the Content of the container in Index */
+.navbar { order: 1; }
+.header { order: 2;}
+.aboutus { order: 3; width: 100%; height:500px; }
+.why{ order: 4; }
+.rules{ order: 5; }
+.joinus { order: 7; width: 100%; }
+.footer { order: 8;  }
+
+
+
+/*Styles for the Navigation Bar */
+.navbar{
+    display: flex ;
+    background-color: #cd671d ;
+    justify-content: space-around ;
+	height: 180px;
+}
+
+
+.navbar ul{
+    display: flex ;
+    align-items: center ;
+}
+
+.navbar li{
+    list-style: none;
+    margin-left: 1.5rem;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: white;
+}
+
+.navbar a:hover{
+    color: #B1E3FD;
+	
+}
+
+.navbar img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.navbar .sub a{
+  font-size: 12px;
+}
+.navbar .sub {
+   font-size: 10px;
+  top: 5px;
+  position: relative;
+}
+
+/*li is for the List of typeOfCathtml hyperlink, connect to the hoime cats or the wild cats anchor*/
+.navbar  li:hover .sub {
+  display: block;
+}
+
+.navbar .sub li{
+  overflow: hidden;
+  height: 0;
+  transition: height 500ms;
+
+ }
+ 
+.navbar li:hover .sub li {
+  height: 30px;
+}
+.flex-container { 
+display: flex; flex-flow: row wrap; 
+}
+
+
+
+/*Styles for the "top" Button */
+#scroll{
+    display: none; 
+    position: fixed; 
+    bottom: 50px; 
+    right: 50px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #6E696F; 
+    color: white; 
+    padding: 15px; 
+    border-radius: 50%; 
+    font-size: 15px; 
+	font-family: Copperplate;
+}
+
+#scroll:hover {
+	background-color: #055899;
+	font-size: 16px;  
+}
+
+
+/*Styles for the Header (Big Title of the club) */
+.header{
+	width: 100%;
+	height: 100%;
+    position: relative ;
+    text-align: center ;
+    color: white ;
+	margin-bottom: -10px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header img{
+    width: 100%;
+	height: 100%;
+	overflow: cover;
+}
+.centered{
+    position: absolute ;
+    font-size: 60px;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%, -50%) ;
+}
+
+
+/*Styles for the Introduction (aboutus) */
+.aboutus{
+	
+	text-align: center;
+    background-color: #FFCA84;
+	
+	display:flex;
+	flex: 1;
+	text-align: center ;
+	font-size:20px;
+}
+.header1, .header2{
+	flex:1;
+}
+.aboutus p{
+    margin: 20px ;
+	margin-bottom: 5px;
+	color: #0D4C92;
+}
+.aboutus h2{
+	margin-top: 20px;
+	font-size: 40px;
+	font-family: Courier New,Copperplate;
+	
+}
+
+.aboutus button{
+    background-color: #FFAD5C; 
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.5s;
+}
+
+
+.aboutus button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+	font-size: 22px;
+	background-color: #FC7E00; 
+	font-weight: bold;
+	cursor: pointer;
+
+}
+
+.header2 {
+    background-color: black;
+	position:relative;
+	color: white;
+	flex: 1;
+}
+.header2 img{
+	display:block;
+	width: 100%;
+    height: 100%;
+	
+}
+
+/*Styles for the main body */
+.main{
+	margin-left: 200px ;
+	margin-right: 200px ;
+	background-color:white;
+}
+
+
+/*Styles for the why part (Reasons for choosing cats) */
+.why{
+    display: grid ;
+    align-items: center ;
+    grid-template-columns: 3fr 3fr  ;
+    column-gap: 5px ;
+	background-color: #FDF6B1 ;
+}
+.why img{
+	margin-top: 10px ;
+    max-width: 95%;
+    max-height: 80%;
+}
+
+.why p{
+    color: #002B5A;
+	font-size: 1.1em;
+}
+
+
+/*Styles for Regulation of the club */
+.rules{
+    display: grid ;
+    align-items: center ;
+    grid-template-columns: 3fr 3fr  ;
+    column-gap: 5px ;
+	margin-left: 10px ;
+}
+
+
+
+.rules img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rules p{
+    color: #7C1919;
+	font-size: 1.05em;
+}
+
+
+/*Styles for the text, in why part and aboutus part */
+.text{
+    font-size: 16px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.text p{
+    margin: 40px ;
+    margin-bottom: 0px;
+}
+
+
+/*Styles for the joinus part */
+.joinus{
+    text-align: center;
+    background-color: #FFCA84;
+    padding: 40px ;
+	display:none;
+	padding-top:-10px;
+}
+
+.joinus button{
+    background-color: #FFAD5C; 
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.joinus button:hover {
+    background-color: #FC7E00;
+    color: white;
+    transform: scale(1.2);
+	cursor: pointer;
+}
+
+
+/*Styles for the footer*/
+.footer{
+    padding: 10px 10px 0px 10px ;
+    width: 100% ;
+    height: 150px ;
+  background-color: #cd671d;
+}
+
+.footer img{
+    display: block ;
+    margin-left: auto;
+    margin-right: auto;
+	height: 100%;
+}
+
+
+
+
+
+/*background color changes when screen size changes*/
+@media only screen and (max-width: 2200px){
+
+html{ height: auto; background-color: #292622; }
+}
+@media only screen and (max-width: 2100px){
+
+html{ height: auto; background-color: #322E29; }
+}
+@media only screen and (max-width: 2000px){
+
+html{ height: auto; background-color: #3B352E; }
+}
+@media only screen and (max-width: 1900px){
+
+html{ height: auto; background-color: #473F35; }
+
+}
+@media only screen and (max-width: 1800px){
+
+html{ height: auto; background-color: #4D4336; }
+}@media only screen and (max-width: 1700px){
+
+html{ height: auto; background-color: #594D3C; }
+}
+
+
+
+@media only screen and (max-width: 1600px){
+
+html{ height: auto; background-color: #665641; }
+.header2 { display: none; }
+.aboutus {
+	width: 100%;
+	font-size:20px;
+	padding-bottom:1px;
+}
+.centered{
+    font-size: 43px;    
+}
+}
+
+@media only screen and (max-width: 1500px){
+
+html{ height: auto; background-color: #6E5A41; }
+}
+
+@media only screen and (max-width: 1400px){
+
+html{ height: auto; background-color: #7D6343; }
+}
+@media only screen and (max-width: 1300px){
+.navbar img{
+    display: none;
+}
+html{ height: auto; background-color: #8A6A43; }
+}
+@media only screen and (max-width: 1200px){
+.aboutus {
+	width: 100%;
+	font-size:15px;
+	padding-bottom:1px;
+}
+html{ height: auto; background-color: #957043; }
+}
+@media only screen and (max-width: 1100px){
+
+html{ height: auto; background-color: #A07542; }
+}
+@media only screen and (max-width: 1000px){
+
+html{ height: auto; background-color: #A77840; }
+}
+
+@media only screen and (max-width: 900px){
+
+html{ height: auto; background-color: #AF7B3D; }
+}
+
+
+/*Rescheduled of Index when the screen width become lowest*/
+@media only screen and (max-width: 800px){
+.centered{
+    font-size: 20px;    
+}
+
+.aboutus {
+	display: none;
+}
+.joinus {
+    font-size: 10px;
+	display:inline-block;
+}
+.rules {
+	display:inline-block;
+	margin-left: 0px ;
+}
+.why {
+	display:inline-block;
+	margin-top: 10px ;
+}
+.why img{
+	margin-top: -20px ;
+    max-width: 100%;
+    max-height: 100%;
+}
+.text p{
+    margin: 20px ;
+	font-size: 10px;
+}
+
+html{ height: auto; background-color: #C37F2F; }
+}
+
+@media only screen and (max-width: 700px){
+
+html{ height: auto; background-color: #D18329; }
+}
+@media only screen and (max-width: 600px) {
+
+html{ height: auto; background-color: #DF851E; }
+}
+
+@media only screen and (max-width: 500px){
+
+html{ height: auto; background-color: #E4861A; }
+}
+
+@media only screen and (max-width: 400px){
+
+html{ height: auto; background-color: #EE8814; }
+}
+
+@media only screen and (max-width: 300px){
+
+html{ height: auto; background-color: #F5880D; }
+}
+
+@media only screen and (max-width: 200px){
+
+html{ height: auto; background-color: #FD8702; }
+}

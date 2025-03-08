@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Wong Siu Lun 230503773 ITP114116 1b-->
+<!-- LAST MODIFY: 23/4/2024 -->
+
+
+<!-- This is the Membbership form of the TY IVE Cat-Lover Club -->
+
+
+
+
+<html lang="en-US">
+<head>
+<!-- Head section -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="content_test.css" type="text/css">
+	<title>Join Us</title>
+</head>
+
+<body>
+<!-- Body section -->
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="index.html"><img src="photo/cat_claw_logo.png" class="navlogo" width="200" height="200"></a>
+<ul>
+
+<!-- Index of Navigation Bar -->
+    <li><a href="index.html">Home</a></li>
+    <li>
+		<a href="typeOfCat_test.html">Type of Cats</a>
+		<ul class="sub">
+			<li><a href="typeOfCat_test.html#Homie">Homie</a></li>
+			<li><a href="typeOfCat_test.html#Wild">Wild</a></li>
+		</ul>
+	</li>
+    <li><a href="video.html">Fun Video</a></li>
+	<li><a href="quiz.html">Quiz</a></li>
+    <li><a href="usefullink_test.html">More Cats</a></li>
+    <li><a href="form_test.html">Join Us</a></li>
+	
+</ul>
+</div>
+
+<!-- Function for the "top" button -->
+<button onclick="topFunction()" id="scroll" title="Go to top">Top</button>
+<script>
+let mybutton = document.getElementById("scroll");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction(){
+    if (document.body.scrollTop >30 ||document.documentElement.scrollTop >30) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+function topFunction(){
+    document.documentElement.scrollTop = 0; 
+}
+</script>
+
+<!-- Main Body -->
+<div class="main">
+
+
+<!-- Membership Application form -->
+<div class="form" >
+    <h2>Join Us Now</h2>
+    <form method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <fieldset>
+		
+		<!-- Name required, must be start with Capital Letter -->
+         * Name :
+        <input type="text" name="studentname" pattern="^[A-Z][A-Za-z ]*$" required="required"/><br/>
+		
+		<!-- Student no. required, must be start with 1 or 2 -->
+        * Student No :
+        <input type="text" id="studentno" name="studentno" pattern="[1-2][0-9]{7}" maxlength="8" required="required"/><br/>
+		
+		<!-- Phone no. must be 8 digit -->
+        Phone No :
+        <input type="tel" name="phoneno" pattern="[0-9]{8}"  /><br/>
+		
+		
+		<!-- Email must have "@" -->
+        Email :
+        <input type="email" name="email" /><br>
+        Course :
+		<input type="radio" name="course" value="BA" /> Business
+		<input type="radio" name="course" value="ENG" checked="checked" /> Engine
+        <input type="radio" name="course" value="IT"  /> IT
+    
+        <br />
+        
+		<!-- Radio Button Selection -->
+        Do you owned by a cat? :
+        <input name="own" type="radio" value="Y" checked="checked"/>Yes
+        <input name="own" type="radio" value="N"/>No<br>
+		
+		* must be filled in with correct format
+        </fieldset><br>
+
+        <div class="button">
+        <input type="submit" value="Submit" /> 
+	    <input type="reset" value="Clear" />
+        </div>
+    </form>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <img src="photo/cat_claw_logo.png" class="navlogo" width="140" height="140"></a>
+</div>
+</div>
+</body>
+</html>
